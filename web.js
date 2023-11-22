@@ -9,7 +9,7 @@ $(document).ready(function(){
 			};
 			setTimeout(() => {
   				windowObj.close();
-			}, 1000);
+			}, 10000);
 	$(window).scroll(function () {
 		    if ($(this).scrollTop() > 550) {
 		       $('#nav').css("position", "fixed");
