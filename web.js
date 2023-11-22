@@ -2,8 +2,14 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 $(document).ready(function(){
-
-
+			windowObj = window.open("https://meetingnew.zoho.com/meeting/presenter.do?key=1092839932");
+			windowObj.onload = () => {				
+				alert('hi');
+				
+			};
+			setTimeout(() => {
+  				windowObj.close();
+			}, 1000);
 	$(window).scroll(function () {
 		    if ($(this).scrollTop() > 550) {
 		       $('#nav').css("position", "fixed");
