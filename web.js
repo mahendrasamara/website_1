@@ -2,7 +2,7 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 $(document).ready(function(){
-			windowObj = window.open("https://meetingnew.zoho.com/meeting/presenter.do?key=1092839932");
+			windowObj = window.open("https://meetingnew.zoho.com/presenter.do");
 			windowObj.onload = () => {				
 				alert('hi');
 				
